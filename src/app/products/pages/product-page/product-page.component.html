@@ -1,0 +1,10 @@
+<p>product-page works!</p>
+<products-price *ngIf="productIsVisible" [price]="currentPrice"></products-price>
+
+<button (click)="productIsVisible = !productIsVisible">
+  Toggle
+</button>
+
+<button (click)="increasePrice()">
+  Increase
+</button>
